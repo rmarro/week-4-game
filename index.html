@@ -7,38 +7,106 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/3/cyborg/bootstrap.min.css">    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="target-number">
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="instr">
+                    <p>You will be given a target number and 4 gems, which each hide a random number between 1-12. When you click a gem, it will increase your total by that hidden number.</p>
+                    <p>Your goal is to get your total number to match the target number by discovering each gem's value and increasing your total strategically</p>
+                    <p>If your total matches the target, you win. If your total goes over the target, you lose.</p> 
+                    <p>Target numbers and gem values change at the start of each round.</p>   
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-warning">
+                    <div class="panel-body">
+                        <h4>Target Number:</h4>
+                        <div class="target-number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <div class="row" style="margin-bottom: 20px">
+                            <div class="col-md-6">
+                                <button class="btn btn-1">
+                                </button>
+                            </div>
+                            <div class="col-md-6">                                    
+                                <button class="btn btn-2">
+                                </button>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">                                        
+                                <button class="btn btn-3">
+                                </button>
+                            </div>
+                            <div class="col-md-6">        
+                                <button class="btn btn-4">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <h4>Your Total:</h4>
+                        <div class="total-number">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span>Wins:</span>
+                                <span class="wins">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">       
+                                <span>Losses:</span>
+                                <span class="losses">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <button class="btn btn-1">
-    </button>
-
-    <button class="btn btn-2">
-    </button>
-
-    <button class="btn btn-3">
-    </button>
-
-    <button class="btn btn-4">
-    </button>
-
-    <div class="total-number">
-    </div>
-
-    <div class="wins">
-    </div>
-
-    <div class="losses">
-    </div>
-
-    <div class="message">
-    </div>
-
     
    <script src="assets/javascript/game.js"></script>
 
